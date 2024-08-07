@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.content{
+    @apply container mx-auto p-12 sm:px-0;
+}
+
+.content h3{
+    @apply text-lg font-bold;
+}
+
+.content p{
+    @apply pb-3;
+}
+
+.movie-list{
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-10;
+}
+
+.movie-list li{
+    @apply shadow-lg rounded-lg;
+}
+
+.movie-list .movie-poster{
+    @apply w-full h-auto sm:h-[360px] overflow-hidden rounded-t-md;
+}
+
+.movie-list .movie-poster img{
+    @apply hover:scale-105 transition-transform duration-300;
+}
+
+.movie-list .movie-info{
+    @apply min-h-[120px] px-5 pt-5 bg-gray-800 text-white rounded-b-md;
+}
+
+.star-rating{
+    @apply flex items-center gap-1;
+}
+
+.star-rating svg{
+    @apply w-4 h-4 fill-current text-yellow-500;
+}
+
+.movie-list .cta{
+    @apply my-5;
+}
+
+.movie-list button{
+    @apply block w-full py-2 text-black font-semibold bg-yellow-500 rounded-sm hover:bg-yellow-400 transition-all;
+}
+
+.genre {
+    @apply inline-block rounded-full bg-slate-600 text-white text-sm text-center w-auto px-2 py-1 m-1; 
+}
+

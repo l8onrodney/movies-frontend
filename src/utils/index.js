@@ -1,0 +1,1 @@
+export const ALL_MOVIES = 'https://movie-reviews-backend-sl1q.onrender.com/api/movies?populate=posterImage,genres,actors,actors.image';
